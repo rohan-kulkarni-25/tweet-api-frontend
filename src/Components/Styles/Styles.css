@@ -121,6 +121,7 @@ border: 1px solid purple;
   color: white;
   font-weight: 600;
   border-radius: 0 0 2rem 2rem;
+  cursor: pointer;
 }
 
 .ops div:nth-child(2){
