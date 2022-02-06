@@ -11,8 +11,6 @@ export default function TweetForm(props) {
           <textarea
             onChange={(e) => props.setState({ message: e.target.value })}
             type="text"
-            name=""
-            id=""
             value={props.state.message}
             placeholder="YOUR MESSAGE"
           />

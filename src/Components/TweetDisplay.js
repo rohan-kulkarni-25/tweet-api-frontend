@@ -6,9 +6,8 @@ export default function TweetDisplay(props) {
 
       let d = new Date(tweet.createdAt)
       d = d.toDateString()
-      console.log(d);
       return <div key={tweet._id} className="tweet-box">
-        <img src={(tweet.authorImg) ? tweet.authorImg : ''} className='img' alt="" srcset="" />
+        <img src={(tweet.authorImg) ? tweet.authorImg : ''} className='img' alt="" />
         <div>
           <p className='desc'><span>{tweet.author}</span> - {d}</p>
           <div className='tweet'>{tweet.tweetMessage}</div>

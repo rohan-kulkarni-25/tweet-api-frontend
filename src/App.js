@@ -52,7 +52,6 @@ class App extends Component {
       .then((data) => data.json())
       .then((data) => {
         data.data.tweets = data.data.tweets.reverse();
-        console.log(data.data.tweets);
         this.setState({ tweets: data.data.tweets });
       });
     this.setState({ load: false })
@@ -63,7 +62,6 @@ class App extends Component {
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
       this.setState({ currentUser: user });
-      console.log(this.state.currentUser)
       if (user !== null) {
         this.setState({ username: user.displayName, email: user.email, photo_url: user.photoURL });
       }
