@@ -154,6 +154,7 @@ border: 1px solid purple;
 
 @media only screen and (max-width: 800px) {
   .dashboard{
+    margin-top: 3rem;
     flex-direction: column;
   }
   .tweetsdisplay{
